@@ -1914,7 +1914,11 @@ figcaption {
 }
 
 .hero_rive.hide-mobile-portrait {
+  width: 1070px;
+  height: 470px;
   display: block;
+  position: absolute;
+  top: -2rem;
 }
 
 .rive-hero_mask {
@@ -2057,6 +2061,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   padding-top: 1.5rem;
+  padding-bottom: 4rem;
   display: flex;
 }
 
@@ -2226,7 +2231,7 @@ figcaption {
   grid-auto-columns: 1fr;
   justify-content: space-between;
   place-items: center;
-  padding: 2rem 4rem 4rem;
+  padding: 3rem 4rem 4rem;
   display: flex;
 }
 
@@ -3476,6 +3481,11 @@ figcaption {
 
   .hero_rive {
     width: 100%;
+  }
+
+  .hero_rive.hide-mobile-portrait {
+    width: 100%;
+    height: 420px;
   }
 
   .process_grid-col {
