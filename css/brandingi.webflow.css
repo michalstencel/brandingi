@@ -2157,7 +2157,7 @@ figcaption {
 }
 
 .portfolio_item.fantasy {
-  background-image: url('../images/fantasy.jpg');
+  background-image: url('../images/fantasy_1.avif');
   background-position: 50%;
   background-size: cover;
 }
@@ -2251,6 +2251,10 @@ figcaption {
 
 ._3col-grid.padding-top.is-hero {
   padding-top: 4rem;
+}
+
+._3col-grid.is-horizontal {
+  margin-top: 0;
 }
 
 ._3col-grid.is-vertical {
@@ -2437,7 +2441,7 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 6rem;
   display: flex;
 }
 
@@ -3538,6 +3542,10 @@ figcaption {
 
   .portfolio_image.is-vertical {
     height: 25rem;
+  }
+
+  .logo-wrapper {
+    width: 100%;
   }
 
   .logo-wrapper.brandingi {
