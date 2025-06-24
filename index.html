@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Jun 24 2025 13:17:43 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Tue Jun 24 2025 13:34:07 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="68302c1b1c0794a2459755fe" data-wf-site="68302c1a1c0794a2459755ad">
 <head>
   <meta charset="utf-8">
@@ -198,22 +198,6 @@ margin: 0rem !important;
   mask-position: center;
   mask-size: 100% 100%;
 }
-  .spline-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    padding-bottom: 100%;
-    height: 0;
-  }
-  #spline-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
 </style>
     </div>
     <main class="main-wrapper">
@@ -290,11 +274,7 @@ margin: 0rem !important;
               <div class="hero_content">
                 <div class="hero_rive-component">
                   <div class="hero_rive hide-mobile-portrait" data-rive-url="https://cdn.prod.website-files.com/68302c1a1c0794a2459755ad/6854288e3d8284c0e148c8c5_brandingi-hero.riv" data-rive-state-machine="State Machine 1" data-rive-artboard="hero" data-rive-autoplay="true" data-rive-is-touch-scroll-enabled="true" data-rive-automatically-handle-events="false" data-rive-fit="cover" data-rive-alignment="center" data-animation-type="rive"><canvas style="height:100%;width:100%"></canvas></div>
-                  <div class="spline_embed w-embed">
-                    <div class="spline-container">
-                      <canvas id="spline-canvas"></canvas>
-                    </div>
-                  </div>
+                  <div class="hero_spline" data-w-id="70229223-db8c-1574-393d-6fad98e5a181" data-animation-type="spline" data-spline-url="https://prod.spline.design/MnZt96klJKJjCBgP/scene.splinecode"><canvas></canvas></div>
                 </div>
                 <div class="hero_heading">
                   <h1 class="text-color-light">Branding to nie tylko ładne logo</h1>
@@ -962,12 +942,6 @@ margin: 0rem !important;
 $(function() {
   $('.this-year').text(new Date().getFullYear());
 });
-</script>
-  <script type="module">
-  import { Application } from "/spline-hero/spline.runtime.js";
-  const canvas = document.getElementById("spline-canvas");
-  const app = new Application(canvas);
-  app.load("/spline-hero/scene.splinecode");
 </script>
 </body>
 </html>
