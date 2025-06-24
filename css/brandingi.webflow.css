@@ -2157,7 +2157,6 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
   display: flex;
 }
 
@@ -2560,7 +2559,7 @@ figcaption {
   border-width: 1px;
   border-color: black black black var(--stroke-colors--stroke-medium);
   color: var(--text-colors--text-secondary);
-  text-align: left;
+  text-align: center;
   justify-content: center;
   align-items: center;
   width: 100%;
