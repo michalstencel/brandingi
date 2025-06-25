@@ -724,8 +724,11 @@ figcaption {
   opacity: 1;
   justify-content: center;
   align-items: flex-start;
+  display: flex;
   position: absolute;
-  inset: -10% 0% auto;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .nav_link-wrapper:where(.w-variant-78512203-e803-40df-2d34-bb470aab48ef) {
@@ -2041,6 +2044,10 @@ figcaption {
   display: flex;
 }
 
+.spline-embed {
+  width: 90%;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -2674,6 +2681,7 @@ figcaption {
 
   .hero_spline {
     height: 60%;
+    top: -5%;
   }
 
   .process_item-footer-content {
@@ -3102,6 +3110,7 @@ figcaption {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     flex-flow: column;
+    max-width: 80%;
     display: flex;
   }
 
@@ -3124,8 +3133,7 @@ figcaption {
   }
 
   .hero_spline {
-    height: 100%;
-    inset: 0% 0% auto;
+    inset: -35% 0% auto;
   }
 
   .process_item-footer-content {
