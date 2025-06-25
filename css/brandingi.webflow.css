@@ -1675,6 +1675,7 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   position: absolute;
+  inset: 0%;
 }
 
 .nav_link-wrapper:where(.w-variant-78512203-e803-40df-2d34-bb470aab48ef) {
