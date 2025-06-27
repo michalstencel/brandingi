@@ -525,10 +525,6 @@ figcaption {
   color: var(--text-colors--text-light);
 }
 
-.text-color-light:hover {
-  color: var(--text-colors--text-neutral);
-}
-
 .text-color-light.text-height-short {
   line-height: 1.75rem;
 }
@@ -1711,8 +1707,6 @@ figcaption {
 }
 
 .pricing-table_first-cell {
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
   color: var(--text-colors--text-secondary);
   text-align: left;
   border: 1px #000;
