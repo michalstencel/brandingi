@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Mar 10 2026 09:56:12 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Wed May 20 2026 16:18:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="685a6bc47e80ec79eb1eeec5" data-wf-site="68302c1a1c0794a2459755ad">
 <head>
   <meta charset="utf-8">
@@ -7,8 +7,8 @@
   <meta content="Kontakt | Brandingi.pl" property="og:title">
   <meta content="Projektujemy praktyczne systemy wizualne, które przyciągają uwagę, budują zaufanie i zwiększają konwersję. Sprawdź ofertę na brandingi.pl" property="og:description">
   <meta content="https://cdn.prod.website-files.com/68302c1a1c0794a2459755ad/6854011c9c58625939c3e5f4_fd2e93f5a27fb62243053cf43273cbbf_home-open-graph.jpg" property="og:image">
-  <meta content="Kontakt | Brandingi.pl" property="twitter:title">
-  <meta content="Projektujemy praktyczne systemy wizualne, które przyciągają uwagę, budują zaufanie i zwiększają konwersję. Sprawdź ofertę na brandingi.pl" property="twitter:description">
+  <meta content="Kontakt | Brandingi.pl" name="twitter:title">
+  <meta content="Projektujemy praktyczne systemy wizualne, które przyciągają uwagę, budują zaufanie i zwiększają konwersję. Sprawdź ofertę na brandingi.pl" name="twitter:description">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -329,8 +329,90 @@ margin: 0rem !important;
                 </div>
               </div>
               <div id="w-node-_93df5cc4-7d78-bf90-2274-9ccf7f76d8ee-eb1eeec5" class="contact_form">
-                <div class="tally-form kontakt w-embed w-iframe w-script"><iframe data-tally-src="https://tally.so/embed/wMlWA8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="539" frameborder="0" marginheight="0" marginwidth="0" title="Kontakt"></iframe>
-                  <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                <div class="tally-form kontakt w-embed w-iframe w-script">
+                  <style>
+  .nl-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .nl-form input,
+  .nl-form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  .nl-form input::placeholder,
+  .nl-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .nl-form input:focus,
+  .nl-form textarea:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  .nl-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .nl-form button {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 28px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: opacity 0.2s;
+  }
+  .nl-form button:hover {
+    opacity: 0.85;
+  }
+  .nl-form .nl-success {
+    display: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    padding: 12px 0;
+  }
+</style>
+                  <form name="kontakt" method="POST" data-netlify="true" class="nl-form" id="nl-kontakt">
+                    <input type="hidden" name="form-name" value="kontakt">
+                    <input type="text" name="imie" placeholder="Imię i nazwisko" required="">
+                    <input type="email" name="email" placeholder="E-mail" required="">
+                    <textarea name="wiadomosc" placeholder="Wiadomość" rows="5" required=""></textarea>
+                    <button type="submit">Wyślij →</button>
+                    <p class="nl-success" id="nl-success">Dziękujemy! Odezwiemy się wkrótce.</p>
+                  </form>
+                  <script>
+  document.getElementById('nl-kontakt').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(function() {
+      form.reset();
+      document.getElementById('nl-success').style.display = 'block';
+    })
+    .catch(function(err) {
+      alert('Coś poszło nie tak, spróbuj ponownie.');
+    });
+  });
+</script>
                 </div>
                 <div class="tally-form projekt w-embed w-iframe w-script"><iframe data-tally-src="https://tally.so/embed/3lXxWN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0" title="Nowy projekt"></iframe>
                   <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
